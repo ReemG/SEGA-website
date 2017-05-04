@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAGE</title>
+</head>
+
+<body>
+    <header class="header">
+        <h1><img id="logo" src="Images/logo.png"></h1>
+        <select id="resp-menu">
+            <option><a class="active" href="index.html">Home</a></option>
+            <option><a>Projects</a></option>
+            <option><a>About</a></option>
+            <option><a>Services</a></option>
+            <option><a>Blog</a></option>
+            <option><a>Get in Touch</a></option>
+        </select>
+
+        <ul class="menu">
+            <li><a class="active" href="index.html">Home</a></li>
+            <li><a>Projects</a></li>
+            <li><a>About</a></li>
+            <li><a>Services</a></li>
+            <li><a>Blog</a></li>
+            <li><a>Get in Touch</a></li>
+        </ul>
+        <div>
+            <select>
+                <option>En</option>
+                <option>Ar</option>
+            </select>
+            <img id="searchimg" onclick="searchimage()" src="Images/search.png" />
+            <!--<input type="text" id="searchtext">-->
+        </div>
+    </header>
+    <main class="content">
+        <section id="projects">
+            <section id="page-title">
+                <h2>DO YOUR BEST</h2>
+                <select>
+                <option>SHOW ALL PROJECTS</option>
+                <option>ALL</option>
+                <option>EDITORIAL</option>
+                <option>DIGITAL</option>
+                <option>PHOTOGRAPHY</option>
+                <option>MOBILE</option>
+                <option>IDENTITY</option>
+             </select>
+            </section>
+            <section>
+                <article class="project1">
+                    <div></div>
+                    <h3>AMERICAN UNIVERSITY</h3>
+                    <h5>DIGITAL / MOBILE / IDENTITY</h5>
+                </article>
+                <article class="project2">
+                    <div id="details">
+                        <p>YEAR 2014</p>
+                        <p>CLIENT: IDEALUI</p>
+                        <p> Unique multipurpose vCarde/Resume PSD template. Here you can place information about your experience, education and expertise.</p>
+                    </div>
+                    <h3>THE ART OF STORYTELLING</h3>
+                    <h5>ORIGINAL / IDENTITY</h5>
+                </article>
+            </section>
+            <section>
+                <article class="project3">
+                    <div></div>
+                    <h3>SPARK IDEAS</h3>
+                    <h5>PHOTOGRAPHY / IDENTITY / DIGITAL</h5>
+                </article>
+                <article class="project4">
+                    <div></div>
+                    <h3>MOBILE APPLICATION</h3>
+                    <h5>DIGITAL / MOBILE / IDENTITY</h5>
+                </article>
+            </section>
+            <section>
+                <article class="project5">
+                    <div></div>
+                    <h3>CURIOSITY</h3>
+                    <h5>DIGITAL / IDENTITY</h5>
+                </article>
+                <article class="project6">
+                    <div></div>
+                    <h3>DISCOVERY</h3>
+                    <h5>EDITORIAL / DIGITAL / IDENTITY</h5>
+                </article>
+                <article class="project7">
+                    <div></div>
+                    <h3>SAGE</h3>
+                    <h5>DIGITAL / MOBILE / IDENTITY</h5>
+                </article>
+            </section>
+        </section>
+
+        <section id="more-projects">
+            <button id="more-button">SHOW MORE PROJECTS</button>
+        </section>
+
+        <section id="work">
+            <h2 id="work-h2">HOW WE WORK</h2>
+            <img id="playimg" onclick="videoplay()" src="Images/videoplay.png">
+            <video id="video" src="motivation.MP4" controls title="video element"> </video>
+            <p>FLEXABLE MULTI-CONCEPT PORTFOLIO THEME BASED ON WORDPRESS.<br>BUILT BY DESIGNERS, FOR DESIGNERS, CREATIVE AGENCIES AND STUDIOS</p>
+        </section>
+
+        <section id="purchase">
+            <h3>SHOWCASING YOUR WORK HAS NEVER BEEN MORE FUN</h3>
+            <p>Discover elegent solution for your online portfolio, fast, reliable, affordable...</p>
+            <button>PURCHASE SAGE NOW</button>
+        </section>
+
+        <section id="countersection">
+            <div id="finished-projects">
+                <img src="Images/finished.png">
+                <p class="counter">2 180</p>
+                <p class="countername">Finished Projects</p>
+            </div>
+            <div>
+                <img src="Images/mobile.png">
+                <p class="counter">105 870</p>
+                <p class="countername">Mobile Screens Designed</p>
+            </div>
+            <div id="emails-sent">
+                <img src="Images/email.png">
+                <p class="counter">345 850</p>
+                <p class="countername">Emails Sent</p>
+            </div>
+        </section>
+
+        <section id="contact">
+            <div id="categories">
+                <h3>LET'S TALK</h3>
+                <select>
+                <option>APPLICATION DESIGN</option>
+                <option selected>MOBILE DEVELOPMENT</option>
+                <option>UI/UX</option>
+                <option>PHOTOGRAPHY</option>
+                <option>DIGITAL</option>
+                <option>IDENTITY</option>
+            </select>
+            </div>
+            <form method="post" onsubmit="validateForm(); return false;">
+                <div id="sender-info">
+                    <input type="text" id="name" placeholder="Your Name">
+                    <input type="email" id="email" placeholder="Email Address">
+                    <input type="number" id="phone" placeholder="Phone Number">
+                </div>
+                <textarea id="message" placeholder="Your Message goes here"></textarea>
+                <div id="sendmessage">
+                    <input type="submit" value="SEND MESSAGE">
+                </div>
+            </form>
+        </section>
+
+        <section id="map">
+            <div>
+                <img id="mark" src="Images/mark.png">
+                <p id="office">HEAD OFFICE</p>
+                <p id="country">NEWYORK, NY, USA</p>
+                <p id="address">ROCKEFELLER CENTER, 45</p>
+                <p id="office-number">1 123 444 5678</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy;2015 SAGE Multipurpose Theme. Made by <a>idealUI</a></p>
+        <div id="usage">
+            <a>Terms of Use</a>
+            <a>Privacy Policy</a>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>

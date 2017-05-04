@@ -1,0 +1,754 @@
+body {
+    margin: 0px;
+}
+
+.header {
+    border-bottom: 1px solid gainsboro;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+h1 {
+    margin: 0px;
+}
+
+#logo {
+    display: flex;
+    margin-left: 170px;
+    width: 60px;
+    height: 60px;
+}
+
+#resp-menu {
+    display: none;
+}
+
+.menu {
+    display: flex;
+    font: 16px Arial;
+    margin-bottom: 0PX;
+    padding-left: 0px;
+    margin-top: 0px;
+}
+
+.menu li {
+    display: inline;
+    padding: 20px 15px 0px 15px;
+}
+
+.menu li a {
+    text-decoration: none;
+}
+
+.menu li a.active {
+    color: red;
+    border-bottom: 4px solid red;
+    padding-bottom: 20px;
+}
+
+.header div {
+    display: flex;
+}
+
+select {
+    border: none;
+    background-color: white;
+    font: 16px Arial;
+}
+
+#searchimg {
+    width: 40px;
+    height: 40px;
+    margin-top: 10px;
+    border-left: 1px solid gainsboro;
+    margin-right: 160px;
+}
+
+
+/*#searchtext {
+    height: 30px;
+    margin-top: 15px;
+    visibility: hidden;
+    
+}*/
+
+#projects {
+    display: flex;
+    flex-direction: column;
+}
+
+#projects section {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    margin-left: 170px;
+    margin-top: 20px;
+    margin-right: 160px;
+}
+
+#page-title {
+    display: flex;
+    flex-direction: row;
+    margin-top: 40px;
+}
+
+#page-title h2 {
+    font-family: sans-serif;
+    margin-top: 0px;
+}
+
+#page-title select {
+    font-family: monospace;
+    background-color: #ff1a1a;
+    color: white;
+    font-size: initial;
+    padding-right: 30px;
+    padding-left: 10px;
+    height: 40px;
+}
+
+#page-title select option {
+    background-color: #2a2a2b;
+    color: #9a9b9e;
+}
+
+#page-title select option:hover {
+    color: white;
+}
+
+.project2,
+.project4,
+.project7,
+.project6 {
+    margin-left: 2px;
+}
+
+.project1 div,
+.project4 div,
+.project5 div,
+.project6 div,
+.project7 div {
+    width: 300px;
+    height: 230px;
+    background-color: #2a2a2b;
+}
+
+.project2 div,
+.project3 div {
+    width: 620px;
+    height: 230px;
+    background-color: #2a2a2b;
+    color: #2a2a2b;
+}
+
+.project1 div:hover,
+.project2 div:hover,
+.project3 div:hover,
+.project4 div:hover,
+.project5 div:hover,
+.project6 div:hover,
+.project7 div:hover {
+    background-color: #ff3333;
+    color: white;
+}
+
+#details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: monospace;
+    font-size: 1.2em;
+}
+
+#details p {
+    margin: 0px 100px 10px 100px;
+    font-family: monospace;
+    font-size: 1em;
+}
+
+h3 {
+    margin-bottom: 0px;
+    font-family: monospace;
+}
+
+h5 {
+    margin-top: 10px;
+    color: gray;
+    font-family: monospace;
+}
+
+#more-projects {
+    display: flex;
+    justify-content: center;
+}
+
+#more-button {
+    color: #ff3333;
+    margin-bottom: 20px;
+    background-color: white;
+    border: none;
+    margin-top: 50px;
+    font-weight: bold;
+    font-family: monospace;
+    font-size: large;
+    border-bottom: 4px solid #ff3333;
+}
+
+#work {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #2a2a2b;
+    color: white;
+}
+
+#work h2 {
+    margin-top: 80px;
+    margin-bottom: 40px;
+    font-family: monospace;
+    font-size: 7em;
+}
+
+#playimg {
+    border-radius: 40%;
+    margin-bottom: 50px;
+}
+
+#video {
+    display: none;
+    height: 270px;
+    width: 550px;
+    object-fit: fill;
+}
+
+#work p {
+    margin-bottom: 100px;
+    font-size: small;
+    font-family: sans-serif;
+    margin-top: 15px;
+}
+
+#purchase {
+    background-color: #ff1a1a;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+
+#purchase h3 {
+    margin-top: 40px;
+    font-size: 1.7em;
+    font-weight: 100;
+}
+
+#purchase p {
+    margin-top: 15px;
+    font-family: sans-serif;
+    margin-bottom: 0px;
+    font-size: small;
+}
+
+#purchase button {
+    margin-bottom: 40px;
+    width: 230px;
+    height: 50px;
+    font-size: large;
+    font-family: monospace;
+    background-color: tomato;
+    border: none;
+    color: white;
+    margin-top: 15px;
+}
+
+#countersection {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: #2a2a2b;
+    color: white;
+}
+
+#countersection div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#countersection div img {
+    margin-top: 50px;
+    width: 50px;
+    height: 50px;
+}
+
+.countername {
+    font-size: x-small;
+    margin-top: 5px;
+    color: #9a9b9e;
+    margin-bottom: 40px;
+}
+
+.counter {
+    margin-top: 5px;
+    font-size: 2.5em;
+    font-family: sans-serif;
+    margin-bottom: 0px;
+}
+
+#finished-projects {
+    margin-left: 100px;
+}
+
+#emails-sent {
+    margin-right: 100px;
+}
+
+#contact {
+    background-color: #2a2a2b;
+    color: white;
+}
+
+#categories {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#contact h3 {
+    margin-bottom: 15px;
+    font-size: 1.5em;
+}
+
+#contact select {
+    width: 250px;
+    height: 50px;
+    font-size: large;
+    background-color: tomato;
+    border: none;
+    color: white;
+    margin-top: 15px;
+    padding-left: 10px;
+    font-family: monospace;
+}
+
+#contact select option {
+    background-color: #2a2a2b;
+    color: #9a9b9e;
+}
+
+#contact select option:hover {
+    color: white;
+}
+
+#sender-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 170px;
+    margin-right: 160px;
+}
+
+#contact form input {
+    width: 300px;
+    height: 30px;
+    margin-top: 40px;
+    background-color: #4e4f51;
+    border: none;
+    padding-left: 10px;
+    color: white;
+    margin-left: 2px;
+}
+
+#message {
+    margin-left: 173px;
+    width: 73%;
+    height: 230px;
+    background-color: #4e4f51;
+    border: none;
+    padding-left: 10px;
+    padding-top: 10px;
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+
+#sendmessage {
+    display: flex;
+    justify-content: center;
+}
+
+#contact form input[type=submit] {
+    background-color: white;
+    color: black;
+    margin-bottom: 50px;
+    width: 150px;
+    height: 50px;
+    font-family: monospace;
+    font-size: large;
+}
+
+#map {
+    background-color: #404042;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#map div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ef4537;
+    color: white;
+    margin-top: 70px;
+    margin-bottom: 70px;
+    width: 400px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+#mark {
+    width: 30px;
+    height: 30px;
+}
+
+#office {
+    margin-top: 5px;
+    margin-bottom: 0px;
+    font-family: monospace;
+}
+
+#country {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-family: monospace;
+}
+
+#address {
+    margin-top: 10px;
+    margin-bottom: 0px;
+    font-family: monospace;
+    font-size: larger;
+}
+
+#office-number {
+    margin-top: 20px;
+    font-family: monospace;
+    font-size: larger;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: #2a2a2b;
+    font-size: x-small;
+    color: #9a9b9e;
+}
+
+footer p a {
+    color: white;
+}
+
+footer div {
+    margin-top: 10px;
+}
+
+footer div a {
+    margin-right: 15px;
+}
+
+@media(max-width:1240px) {
+    #logo {
+        margin-left: 100px;
+    }
+    #searchimg {
+        margin-right: 100px;
+    }
+    #projects section {
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+    .project1 div,
+    .project4 div,
+    .project5 div,
+    .project6 div,
+    .project7 div {
+        width: 280px;
+    }
+    .project2 div,
+    .project3 div {
+        width: 580px;
+    }
+    #contact form input {
+        width: 280px;
+    }
+    #sender-info {
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+    #message {
+        margin-left: 103px;
+        width: 80%;
+    }
+}
+
+@media(max-width:1024px) {
+    #logo {
+        margin-left: 50px;
+    }
+    #searchimg {
+        margin-right: 50px;
+    }
+    #projects section {
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+    .project1 div,
+    .project4 div,
+    .project5 div,
+    .project6 div,
+    .project7 div {
+        width: 250px;
+    }
+    .project2 div,
+    .project3 div {
+        width: 520px;
+    }
+    #contact form input {
+        width: 250px;
+    }
+    #sender-info {
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+    #message {
+        margin-left: 53px;
+        width: 89%;
+    }
+}
+
+@media(max-width:900px) {
+    .header {
+        justify-content: flex-start;
+    }
+    #logo {
+        margin-left: 10px;
+    }
+    .menu {
+        display: none;
+    }
+    #resp-menu {
+        margin-left: 30px;
+        display: block;
+        color: white;
+        color: red;
+        border-bottom: 4px solid red;
+    }
+    #resp-menu option {
+        background-color: #2a2a2b;
+        color: #9a9b9e;
+    }
+    #resp-menu option:hover {
+        color: white;
+    }
+    .header div {
+        margin-left: 20px;
+    }
+    #projects section {
+        justify-content: space-between;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .project1 div,
+    .project4 div,
+    .project5 div,
+    .project6 div,
+    .project7 div {
+        width: 200px;
+    }
+    .project2 div,
+    .project3 div {
+        width: 450px;
+    }
+    #details p {
+        margin: 0px 50px 10px 60px;
+        font-size: .9em;
+    }
+    #finished-projects {
+        margin-left: 50px;
+    }
+    #emails-sent {
+        margin-right: 50px;
+    }
+    #contact form input {
+        width: 200px;
+    }
+    #sender-info {
+        justify-content: space-between;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    #message {
+        margin-left: 13px;
+        width: 96%;
+    }
+}
+
+@media(max-width:690px) {
+    #details p {
+        margin: 0px 20px 10px 40px;
+        font-size: .9em;
+    }
+    .project1 div,
+    .project4 div,
+    .project5 div,
+    .project6 div,
+    .project7 div {
+        width: 180px;
+    }
+    .project2 div,
+    .project3 div {
+        width: 380px;
+    }
+    #work h2 {
+        font-size: 6.5em;
+    }
+    #purchase h3 {
+        font-size: 1.6em;
+    }
+    #purchase p {
+        font-size: small;
+    }
+    #purchase button {
+        width: 200px;
+    }
+    #finished-projects {
+        margin-left: 10px;
+    }
+    #emails-sent {
+        margin-right: 10px;
+    }
+    #contact form input {
+        width: 180px;
+    }
+    #message {
+        width: 95%;
+    }
+}
+
+@media(max-width:590px) {
+    #logo {
+        margin-left: 5px;
+    }
+    #details p {
+        margin: 0px 10px 10px;
+        font-size: .9em;
+    }
+    #resp-menu {
+        margin-left: 20px;
+    }
+    #projects section {
+        flex-direction: column;
+    }
+    #page-title select {
+        width: 350px;
+    }
+    .project1 div,
+    .project4 div,
+    .project5 div,
+    .project6 div,
+    .project7 div,
+    .project2 div,
+    .project3 div {
+        width: 350px;
+    }
+    #more-projects {
+        display: flex;
+        justify-content: flex-start;
+        margin-left: 10px;
+    }
+    #work h2 {
+        margin-top: 50px;
+        margin-bottom: 20px;
+        font-size: 4em;
+    }
+    #playimg {
+        margin-bottom: 30px;
+    }
+    #video {
+        height: 270px;
+        width: 360px;
+    }
+    #work p {
+        margin-bottom: 70px;
+        margin-left: 15px;
+    }
+    #purchase h3 {
+        font-size: 1.1em;
+    }
+    #purchase p {
+        font-size: x-small;
+    }
+    #purchase button {
+        width: 150px;
+        font-size: medium;
+    }
+    #countersection {
+        justify-content: space-between;
+    }
+    #countersection div img {
+        margin-top: 30px;
+        width: 45px;
+        height: 45px;
+    }
+    .counter {
+        font-size: 2em;
+    }
+    #finished-projects {
+        margin-left: 10px;
+    }
+    #emails-sent {
+        margin-right: 10px;
+    }
+    #categories {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-left: 10px;
+    }
+    #contact select {
+        width: 360px;
+        height: 40px;
+    }
+    #contact form input {
+        width: 350px;
+        margin-top: 30px;
+    }
+    #sender-info {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-left: 8px;
+    }
+    #message {
+        width: 345px;
+        margin-bottom: 0px;
+    }
+    #sendmessage {
+        justify-content: flex-start;
+        margin-left: 10px;
+    }
+    #map div {
+        width: 350px;
+    }
+    footer {
+        justify-content: space-between;
+    }
+    footer p {
+        margin-left: 10px;
+    }
+    footer div a {
+        margin-right: 5px;
+    }
+}
